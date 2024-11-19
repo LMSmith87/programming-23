@@ -24,7 +24,7 @@ class Rectangle:
         self.left_upper = left_upper
         self.right_lower = right_lower
         self.width = right_lower[0]-left_upper[0]
-        self.height = right_lower[1]-left_upper[1]
+        self.height = left_upper[1] - right_lower[1]
 
     def area(self):
         return self.width * self.height
